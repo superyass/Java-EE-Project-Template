@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>$props.apply("email.activation.title")</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <p>$props.apply("email.activation.greeting") $user.login</p>
+        <p>$props.apply("email.activation.text1")</p>
+        <p>
+            <a href="$baseUrl/#/activate?key=$user.activationKey">Activation Link</a>
+        </p>
+        <p>
+            <span>$props.apply("email.activation.text2")</span>
+            <br/>
+            <em>$props.apply("email.signature")</em>
+        </p>
+    </body>
+</html>
